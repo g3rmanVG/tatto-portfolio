@@ -119,6 +119,7 @@ body{
     display: block;
     margin:6px;
     border-radius: 20px;
+    font-weight: bolder;
 }
 .menubar .first-span{
     width:35px;
@@ -264,13 +265,15 @@ body{
     font-weight:700;
     font-family: poppins;
     font-size: 65px;
+    text-shadow: 2px 2px 4px black;
 }
 .header-content .secondline{
     z-index: 2;
     font-size: 30px;
     padding-top:20px ;
-    font-weight:500;
+    font-weight:600;
     color: rgb(255, 255, 255,.8);
+    text-shadow: 2px 2px 4px black;
 }
 .slash{
     animation-name: animateslash;
@@ -628,139 +631,7 @@ body{
     font-size: 16px;
     opacity: .8;
 }
-#skills{
-    width: 100%;
-    height:auto;
-}
-.skills-header{
-    height: auto;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 45px;
-    font-family: raleway;
-    color: whitesmoke;
-    padding:10px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    font-weight: 900;
-}
-.skills-content{
-    height: auto;
-    width:100%;
-    margin-top: 20px;
-    margin-bottom: 80px;
-}
-.skill-html{
-    height: auto;
-    width: 45%;
-    padding: 0%;
-    position: relative;
-    font-family: poppins;
-    color:whitesmoke;
-    display: inline-block;
-    padding:1.5%;
-}
-.skill-text{
-    width:80%;
-    position: relative;
-    height: 50px;
-}
-.html{
-    display: inline-block;
-    position: absolute;
-    left: 5%;
-    top:30%;
-}
-.html-prog{
-   width:100%;
-   height:40px;
-   border-radius: 10px;
-   background: #191919;
-   box-shadow:0px 0px 25px rgb(0,0,0,.1);
-   position: relative;
-   overflow: hidden;
-}
-.html-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s ease;
-    width:95%;
-    border-radius: 10px;
-    background: #c70039;
-}
-.js-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    font-family: poppins;
-    justify-content: center;
-    transition: all .4s ease;
-    width:90%;
-    border-radius: 10px;
-    background: #c70039;
-}
-.adobe-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s ease;
-    width:83%;
-    border-radius: 10px;
-    background: #c70039;
-}
-.php-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:85%;
-    border-radius: 10px;
-    background: #c70039;
-    transition: all .4s ease;
-}
-.jquery-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .4s ease;
-    width:94%;
-    border-radius: 10px;
-    background: #c70039;
-}
-.seo-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:84%;
-    border-radius: 10px;
-    transition: all .4s ease;
-    background: #c70039;
-}
+
 .portfolio-header{
     height: auto;
     width: 100%;
@@ -976,8 +847,8 @@ padding-bottom: 40px;
     overflow: hidden;
 }
 .blogs .img{
-    height: 80%;
-    width: 100%;
+    height: 100%;
+    width: 90%;
     overflow: hidden;
     transition: all .65s ease;
     position: relative;
@@ -1028,11 +899,9 @@ padding-bottom: 40px;
     letter-spacing: 1px;
   }
 .blogs:hover .img{
-      transform: translateY(-70%);
+      transform: translateX(+5%);
   }
-.blogs:hover .blog-text{
-    transform: translateY(-70%);
-}
+
 .blogs a{
     text-decoration: none;
     color: whitesmoke;
@@ -1262,6 +1131,7 @@ form button:hover{
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
     background: whitesmoke;
+    display: none;
 }
 .color-panel img{
     height: 40px; 
@@ -1425,7 +1295,7 @@ For devices with smaller width like mobile phone
         height: auto;
         padding-right: 0px;
         width: auto;
-    
+        text-shadow: 2px 2px 4px black;
     }
     #about-content{
         display: flex;
@@ -1466,7 +1336,7 @@ For devices with smaller width like mobile phone
     }
     .about-second-line{
         opacity: .8;
-        font-size: 15px;
+        font-size: 18px;
     }
     .about-main{
         display: flex;
@@ -1514,6 +1384,9 @@ For devices with smaller width like mobile phone
         height:80px;
         transition: all .8s ease;
     }
+    #skills{
+        display: none;
+    }
     .skill{
         width:80%;
     }
@@ -1525,6 +1398,7 @@ For devices with smaller width like mobile phone
         width:100%;
         margin-top: 20px;
         margin-bottom: 15px;
+        display: none;
     }
     .portfolio{
         height:auto;
